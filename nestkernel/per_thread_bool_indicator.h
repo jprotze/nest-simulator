@@ -24,6 +24,7 @@
 #define PER_THREAD_BOOL_INDICATOR_H
 
 // C++ includes:
+#include <atomic>
 #include <cassert>
 #include <cstddef>
 #include <cstdint>

@@ -52,9 +52,13 @@ PerThreadBoolIndicator::initialize( const size_t num_threads, const bool status 
   per_thread_status_.resize( num_threads, BoolIndicatorUInt64( status ) );
   size_ = num_threads;
   if ( status )
+  {
     are_true_ = num_threads;
+  }
   else
+  {
     are_true_ = 0;
+  }
 }
 
 bool
